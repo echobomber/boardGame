@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'oxxo';
+    src: url("../font/jf-openhuninn-1.1.ttf");
+  }  
+body {
+    font-family: oxxo, arial,sans-serif;
+}
+html{
+    min-height: 5000px;
+}
+
+.menu-overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fbd23b;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+    height: 0;
+    overflow: hidden;
+    z-index: 10;
+    .menu-close{
+        color: #fff;
+        font-size: 60px;
+        font-weight: bold;
+        align-self: start;
+        // margin-top: 30px;
+    }
+}

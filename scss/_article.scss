@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    &::selection {
+        background: #fbd23b; //背景修改為橙色
+    }
+}
+img{
+    // max-width? 
+    width: 100%;
+    height: auto;
+}
+body{
+    color: #231f20;
+}
+.article-top-menu{
+    background: #fbd23b;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+    }
+}
+.menuTop-logo{
+    display: block;
+    color: #231f20;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    //
+    width: 80px;
+    height: 60px;
+    background-image: url("../img/logo-1.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 65px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+    &:hover{
+        color: #231f20;
+        text-decoration: none;
+    }
+}
+.menu-open{
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    &:hover{
+        color: #ffffff;
+        text-decoration: none;
+    }
+}
+// 文字大小
+.case-Article{
+    margin-top: 90px;
+    @include rwd($pc){
+        max-width: 780px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    h1{
+        font-size: 1.75rem;
+        font-weight: bold;
+        line-height: 1.24;
+        @include rwd($pc){
+            font-size: 2.5rem;
+        }
+    }
+    h2{
+        font-size: 1.3rem;
+        line-height: 1.75;
+    }
+    p{
+        line-height: 1.75;
+        @include rwd($pc){
+            line-height: 2;
+        }
+    }
+}
+.article-img{
+    border-radius: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.video-iframe{
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    @include rwd($pc){
+        height: 450px;
+    }
+}
+.annotation{
+    font-size: .6rem;
+    font-style: italic;
+}
+.text-highlight{
+    color: #fbd23b;
+};
+footer{
+    background: #231f20;
+    color: #ffffff;
+    height: 200px;
+}
