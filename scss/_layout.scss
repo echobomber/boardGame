@@ -5,10 +5,6 @@
 body {
     font-family: oxxo, arial,sans-serif;
 }
-html{
-    min-height: 5000px;
-}
-
 .menu-overlay{
     position: fixed;
     top: 0;
@@ -28,5 +24,38 @@ html{
         font-weight: bold;
         align-self: start;
         // margin-top: 30px;
+    }
+}
+.idea-header{
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(-195deg, #231f20 50%, transparent 50%) center center/100% 100%, #fbd23b;
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    @include rwd($ipad){
+        background: linear-gradient(#231f20 50%, transparent 50%) center center/100% 100%, #fbd23b;
+    }
+}
+.idea-header-content{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    h2{
+        margin-left: 20px;
+        margin-bottom: 30px;
+        font-size: 2.5rem;
+        @include rwd($ipad){
+            font-size: 3.5rem;
+        }
+    }
+}
+.idea-banner-man{
+    width: 250px;
+    @include rwd($mobile-sm){
+        width: 300px;
     }
 }
