@@ -17,3 +17,7 @@ $('.menu-close').on('click', function(e){
     e.preventDefault();
     $('.menu-overlay').css('height', '0');
 })
+$('.fb-share').on('click', function(e){
+    e.preventDefault();
+    document.querySelector('.fb-share-button').click();
+})
