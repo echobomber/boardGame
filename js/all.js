@@ -19,5 +19,5 @@ $('.menu-close').on('click', function(e){
 })
 $('.fb-share').on('click', function(e){
     e.preventDefault();
-    document.querySelector('.fb-share-button').click();
+    $('.fb-share-button').click();
 })
