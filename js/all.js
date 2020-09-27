@@ -17,7 +17,7 @@ $('.menu-close').on('click', function(e){
     e.preventDefault();
     $('.menu-overlay').css('height', '0');
 })
-$('.fb-share-cus').on('click', function(e){
-    e.preventDefault();
-    $('.fb-xfbml-parse-ignore').click();
-})
+// $('.fb-share-cus').on('click', function(e){
+//     e.preventDefault();
+//     $('.fb-xfbml-parse-ignore').click();
+// })
