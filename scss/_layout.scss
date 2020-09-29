@@ -1,9 +1,41 @@
-@font-face {
-    font-family: 'oxxo';
-    src: url("../font/jf-openhuninn-1.1.ttf");
-  }  
+*{
+    box-sizing: border-box;
+    &::selection {
+        background: #fbd23b; //背景修改為橙色
+    }
+    line-height: 1.75;
+    letter-spacing: 1px;
+}
+html{
+    overflow-x: hidden;
+}
+img{
+    // max-width? 
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.font-300{ font-weight: 300;}
+.font-400{ font-weight: 400;}
+.font-500{ font-weight: 500;}
+.font-700{ font-weight: 700;}
+.font-900{ font-weight: 900;}
 body {
-    font-family: oxxo, arial,sans-serif;
+    //font-family: oxxo, arial,sans-serif;
+    font-family: 'Noto Sans TC', arial, sans-serif;
+    color: #231f20;
+}
+.bold-title{
+    font-family: bold-title, 'Noto Sans TC', arial, sans-serif;
+}
+.menu-open{
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    &:hover{
+        color: #ffffff;
+        text-decoration: none;
+    }
 }
 .menu-overlay{
     position: fixed;
@@ -13,7 +45,9 @@ body {
     right: 0;
     background-color: #fbd23b;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     transition: 0.5s;
     height: 0;
     overflow: hidden;
@@ -22,40 +56,6 @@ body {
         color: #fff;
         font-size: 60px;
         font-weight: bold;
-        align-self: start;
         // margin-top: 30px;
-    }
-}
-.idea-header{
-    position: relative;
-    height: 100vh;
-    background: linear-gradient(-195deg, #231f20 50%, transparent 50%) center center/100% 100%, #fbd23b;
-    background-attachment: fixed;
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    @include rwd($ipad){
-        background: linear-gradient(#231f20 50%, transparent 50%) center center/100% 100%, #fbd23b;
-    }
-}
-.idea-header-content{
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%, 0);
-    h2{
-        margin-left: 20px;
-        margin-bottom: 30px;
-        font-size: 2.5rem;
-        @include rwd($ipad){
-            font-size: 3.5rem;
-        }
-    }
-}
-.idea-banner-man{
-    width: 250px;
-    @include rwd($mobile-sm){
-        width: 300px;
     }
 }

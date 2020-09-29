@@ -1,17 +1,3 @@
-*{
-    box-sizing: border-box;
-    &::selection {
-        background: #fbd23b; //背景修改為橙色
-    }
-}
-img{
-    // max-width? 
-    width: 100%;
-    height: auto;
-}
-body{
-    color: #231f20;
-}
 .article-top-menu{
     background: #fbd23b;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -44,15 +30,6 @@ body{
     overflow: hidden;
     &:hover{
         color: #231f20;
-        text-decoration: none;
-    }
-}
-.menu-open{
-    font-size: 30px;
-    font-weight: bold;
-    color: #ffffff;
-    &:hover{
-        color: #ffffff;
         text-decoration: none;
     }
 }

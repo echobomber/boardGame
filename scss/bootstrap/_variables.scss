@@ -64,8 +64,10 @@ $colors: map-merge(
   $colors
 );
 
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary:     #fbd23b; //$blue !default;
+$secondary:   #231f20; //$gray-600 !default;
+$chart-brown: #d89900; //新增 圖表用
+$chart-dark:  #403a3a; //新增 圖表用
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -78,6 +80,8 @@ $theme-colors: map-merge(
   (
     "primary":    $primary,
     "secondary":  $secondary,
+    "chart-brown": $chart-brown,
+    "chart-dark": $chart-dark,
     "success":    $success,
     "info":       $info,
     "warning":    $warning,
