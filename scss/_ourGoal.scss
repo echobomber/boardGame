@@ -1,3 +1,11 @@
+.section-gutter{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    @include rwd($mobile-sm){
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+}
 .ourGoal-header{
     position: relative;
     height: 100vh;
@@ -60,15 +68,21 @@
     }
 }
 .section-title{
-    margin: 80px auto; 
+    margin: 80px 30px;
+    text-align: center; 
     display: flex;
     flex-direction: column;
     @include rwd($ipad){
+        margin: 150px 30px;
         flex-direction: row;
     }
     align-items: center;
     justify-content: center;
-
+    h2{
+        @include rwd($ipad){
+            font-size: 2.5rem;
+        }
+    }
 }
 .section-num{
     margin-bottom: 25px;
@@ -87,7 +101,7 @@
 // }
 .Vdem-title{
     color: #fff;
-    -webkit-text-stroke: 1px #231f20;
+    -webkit-text-stroke: 0.8px #231f20;
     @include rwd($pc){
         font-size: 2rem;
     }
@@ -107,7 +121,7 @@
     }  
 }
 .pie-chart{
-    width: 60%;
+    width: 70%;
     margin-top: 30px;
     margin-bottom: 30px;
     &:nth-child(2){
@@ -116,5 +130,54 @@
     display: block;
     @include rwd($ipad){
         width: 30%;
+    }
+}
+.pie-chart-text{
+    margin: 15px;
+    @include rwd($pc){
+        margin-left: 100px;
+        margin-right: 150px;
+        font-size: 1.5rem;
+    }
+}
+.phone-imitate{
+    max-width: 900px;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 50px;  
+    padding: 15px;
+    @include rwd($pc){
+        padding: 20px;
+        margin: 0 auto;
+    }
+    .screen{
+        border-radius: 50px;
+        background-color: #fff;
+        padding: 15px;
+        @include rwd($pc){
+            padding: 20px;
+        }
+        text-align: center;
+        position: relative;
+        h3{
+            border-radius: 50px;
+            display: inline-block;
+            color: #fff;
+            padding: 10px 40px;
+            margin-top: 20px;
+        }
+        p{
+            font-size: 1.2rem;
+            font-weight: 700;
+            @include rwd($mobile-sm){
+                font-size: 1.5rem;
+                padding: 20px 40px 0; 
+            }
+        }
+        img{
+            position: relative;
+            bottom: -56px;
+            margin-top: -80px;
+        }
     }
 }

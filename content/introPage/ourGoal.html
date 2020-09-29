@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../../css/all.css">
     <title>桌遊理念</title>
 </head>
@@ -24,11 +26,11 @@
     </header>
     <main>
         <section>
-            <div class="section-title">
+            <div class="section-title" data-aos="fade-up">
                 <p class="section-num bold-title h3">Q1</p>
-                <h2 class="bold-title"> 台灣的現況如何?</h2>
+                <h2 class="bold-title">台灣的現況如何?</h2>
             </div>
-            <div class="container Vdem-section d-flex flex-column flex-md-row align-items-center bg-primary mb-5">
+            <div class="container Vdem-section d-flex flex-column flex-md-row align-items-center bg-primary mb-5" data-aos="fade-up">
                 <div class="Vdem-date mt-4 mx-3 my-md-0 mx-md-5">
                     <p class="bg-secondary text-white bold-title mb-1">2018</p>
                 </div>
@@ -40,7 +42,7 @@
                 </div>
             </div>
             <!-- 數據 -->
-            <div class="container px-0 pt-md-3 mb-5">
+            <div class="container px-0 section-gutter" data-aos="fade-up">
                 <div class="row align-items-center no-gutters">
                     <div class="col-md-6 d-flex flex-column p-3 px-md-5">
                         <h3 class="bold-title mb-3 px-2 text-center">台灣新聞信任度排名倒數</h3>
@@ -54,11 +56,32 @@
                 </div>
             </div>
             <!-- 台灣民眾真古錐 -->
-            <div class="container bg-secondary p-3 pt-5 p-md-5">
+            <div class="container bg-secondary p-3 pt-5 px-md-5 section-gutter" data-aos="fade-up">
                 <h3 class="text-white text-center bold-title mb-4 mb-md-5">台灣民眾真古椎 <br> 報導說一是一</h3>
-                <div class="bg-white d-flex flex-column flex-md-row justify-content-center align-items-center">
-                    <img src="../../img/pie-chart01.png" alt="" class="pie-chart m-md-5">
-                    <img class="pie-chart m-md-5" src="../../img/pie-chart02.png" alt="">
+                <div class="bg-white mb-4 mx-2 mx-md-5">
+                    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+                        <img src="../../img/pie-chart01.png" alt="" class="pie-chart m-md-5">
+                        <img class="pie-chart m-md-5" src="../../img/pie-chart02.png" alt="">
+                    </div>
+                    <p class="font-700 text-center pb-3">資料來源: 國發會 「108 年個人家戶數位機會報告」</p>
+                </div>
+                <p class="pie-chart-text text-white font-700">
+                    根據國發會 2020 發布的「108年個人家戶數位機會調 報告」12歲以上台灣人有 26.8% 會轉發無法斷定真假的報導和訊息，更有高達 44.9%的台灣網路族群收到無法判斷真偽訊息時，不會去進行查證。
+                </p>
+            </div>
+        </section>
+        <section>
+            <div class="section-title" data-aos="fade-up">
+                <p class="section-num bold-title h3">Q2</p>
+                <h2 class="bold-title">為何難以控制假新聞?</h2>
+            </div>
+            <div class="phone-imitate bg-secondary" data-aos="fade-up">
+                <div class="screen">
+                    <h3 class="bg-secondary bold-title h4">研究顯示</h3>
+                    <p>
+                        假新聞的傳播比真消息更快， 樣本中真實資訊要花費錯誤流言 6 倍的時間，才能觸及到 1,500 位讀者。
+                    </p>
+                    <img src="../../img/phone-man.svg" alt="">
                 </div>
             </div>
         </section>
@@ -71,6 +94,11 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="../../js/all.js"></script>
 </body>
 </html>
