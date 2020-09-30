@@ -21,3 +21,19 @@ $('.menu-close').on('click', function(e){
 //     e.preventDefault();
 //     $('.fb-xfbml-parse-ignore').click();
 // })
+
+// 點擊圓圈回應 overlay 
+$('.reason-circleBtn').on('click', function(e){
+    e.preventDefault();
+    let target = $(this).data('reactmodel');
+    $('.reactModel-overlay').each(function(e){
+        if($(this).data('reactmodel') == target){
+            $('.reactModel-overlay').css('height', '0');
+            $(this).css('height', '100%');
+        }
+    });
+})
+$('.reactModel-close').on('click', function(e){
+    e.preventDefault();
+    $('.reactModel-overlay').css('height', '0');
+})

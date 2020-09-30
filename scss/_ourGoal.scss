@@ -15,14 +15,14 @@
     position: relative;
     height: 100vh;
     background: linear-gradient(-195deg, #231f20 50%, transparent 50%) center center/100% 100%, #fbd23b;
-    background-attachment: fixed;
+    // background-attachment: fixed;
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     @include rwd($ipad){
         background: linear-gradient(#231f20 50%, transparent 50%) center center/100% 100%, #fbd23b;
-        background-attachment: fixed;
+        // background-attachment: fixed;
     }
 }
 .ourGoal-header-content{
@@ -73,7 +73,7 @@
     }
 }
 .section-title{
-    margin: 80px 30px;
+    margin: 80px 0;
     text-align: center; 
     display: flex;
     flex-direction: column;
@@ -208,17 +208,39 @@
         transform: scale(1.1);
     }
     @include rwd($mobile){
-        width: 170px;
-        height: 170px;
+        width: 150px;
+        height: 150px;
     }
     @include rwd($ipad){
         width: 200px;
         height: 200px;
     }
     span{
-        font-weight: 700;
+        font-weight: 900;
         @include rwd($mobile){
             font-size: 1.5rem;
         }
+    }
+}
+.reactModel-overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fbd23b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: 0.5s;
+    height: 0;
+    overflow: hidden;
+    z-index: 10;
+    .reactModel-close{
+        color: #fff;
+        font-size: 60px;
+        font-weight: bold;
+        // margin-top: 30px;
     }
 }
