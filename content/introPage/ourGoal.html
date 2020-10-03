@@ -8,6 +8,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- swiper.js -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!-- mine -->
     <link rel="stylesheet" href="../../css/all.css">
     <title>桌遊理念</title>
@@ -353,16 +355,41 @@
                 <p class="section-num bold-title h3">Q3</p>
                 <h2 class="bold-title">我們該注意什麼?</h2>
             </div>
-            <div class="container keyNote" style="background-color: #dddddd">
-                <div class="keyNote-thumbnail d-flex justify-content-between py-5">
-                    <a href="#" class="text-decoration-none keyNote-thumbnail-btn active"></a>
-                    <a href="#" class="text-decoration-none keyNote-thumbnail-btn"></a>
-                    <a href="#" class="text-decoration-none keyNote-thumbnail-btn"></a>
-                    <a href="#" class="text-decoration-none keyNote-thumbnail-btn"></a>
+            <div class="keyNote" data-aos="fade-up">
+                <div class="container" style="background-color: #dddddd;">
+                    <div class="keyNote-thumbnail d-flex justify-content-between py-5">
+                        <a href="#" class="text-decoration-none keyNote-thumbnail-btn active"></a>
+                        <a href="#" class="text-decoration-none keyNote-thumbnail-btn"></a>
+                        <a href="#" class="text-decoration-none keyNote-thumbnail-btn"></a>
+                        <a href="#" class="text-decoration-none keyNote-thumbnail-btn"></a>
+                    </div>
                 </div>
-                <div class="d-flex justify-content-center">
-                    <h3 class="bold-title keyNote-title bg-primary">檢視內文，<br class="d-block d-sm-none">避免掉入標題陷阱</h3>
-                </div>
+                
+                <!-- 01 -->
+                <div class="position-relative">
+                    <!-- 定位在 keyNote 會出問題，不知道為什麼 -->
+                    <div class="container keyNote-content">
+                        <div class="d-flex justify-content-center">
+                            <h3 class="bold-title keyNote-title bg-primary">檢視內文，<br class="d-block d-sm-none">避免掉入標題陷阱</h3>
+                        </div>
+                        <div class="keyNote-text row align-items-center pb-4 p-md-4">
+                            <div class="col-lg-5">
+                                <i class="fas fa-quote-left d-block mb-3" style="font-size: 30px;"></i>
+                                <h3 class="bold-title px-lg-4 keyNote-text-title mb-3">
+                                    偏頗標題是煽動情緒的催化劑，你中招了嗎?
+                                </h3>
+                                <i class="fas fa-quote-right d-block mb-4" style="font-size: 30px; text-align: end;"></i>
+                                <p class="font-weight-bold mb-4">
+                                    有⼼⼈⼠可能只會針對事實的特定⾯向去下標題，讓不看內⽂的標題黨產⽣認知偏差。完整的察看標題、內容才能避免被植⼊⽚⾯的印象。
+                                </p>
+                            </div>
+                            <div class="col-lg-7 d-flex flex-column align-items-center">
+                                <img src="../../img/keyNote01.png" class="d-block mb-3">
+                                <a class="h5 text-secondary text-decoration-none font-weight-bold" href="#" target="_blank">資料來源: XXXX</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
             </div>
         </section>
     </main>
