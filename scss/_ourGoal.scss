@@ -344,3 +344,37 @@ body{
         display: none;
     }
 }
+// 四大重點
+.keyNote-title{
+    padding: 15px 30px;
+    display: inline-block;
+    border-radius: 50px;
+    font-size: 1.25rem;
+    text-align: center;
+}
+.keyNote-thumbnail{
+    position: relative;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    &::after{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        height: 4px;
+        transform: translateY(-50%);
+        background-color:#231f20;
+    }
+}
+.keyNote-thumbnail-btn{
+    border-radius: 50%;
+    z-index: 10;
+    width: 20px;
+    height: 20px;
+    background-color: #231f20;
+    .active{
+        background-color: #fbd23b;
+    }
+}
