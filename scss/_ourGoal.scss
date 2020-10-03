@@ -1,3 +1,6 @@
+body{
+    position: relative;
+}
 .border-20{
     @include rwd($mobile){
         border-radius: 20px;
@@ -293,7 +296,10 @@
     }
     img{
         width: 100%;
-        max-height: 300px;
+        max-height: 200px;
+        @include rwd($mobile){
+            max-height: 300px;
+        }
         object-fit: cover;
         border-radius: 20px;
     }
@@ -329,5 +335,12 @@
         padding: 10px 30px; 
         &:hover{color: #000000};
         
+    }
+}
+.swiper-container {
+    width: 100%;
+    display: block;
+    @include rwd(768px){
+        display: none;
     }
 }
