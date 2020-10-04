@@ -41,7 +41,6 @@ $('.reactModel-close').on('click', function(e){
 // keyNote
 let keyNoteBtn = $('.keyNote-thumbnail-btn');
 let keyNoteContent = $('.keyNote-content');
-
 keyNoteBtn.on('click', function(e){
     let target = $(this).attr("href");
     e.preventDefault();
@@ -49,5 +48,14 @@ keyNoteBtn.on('click', function(e){
     $(this).addClass('active');
     keyNoteContent.removeClass('active');
     $('#' + target).addClass('active');
-    
 });
+//checkPoint
+let checkPointBtn = $('.keyNote-checkPoint li');
+let checkPointImg = $('.keyNote-checkPoint-img img');
+checkPointBtn.on('click', function(e){
+    console.log($(this).text());
+    checkPointBtn.removeClass('active');
+    $(this).addClass('active');
+    console.log($(this).data("checkpoint"));
+    checkPointImg.attr("src", '../../img/check0' + $(this).data("checkpoint") + '.png');
+})
