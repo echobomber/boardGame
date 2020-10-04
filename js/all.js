@@ -37,3 +37,17 @@ $('.reactModel-close').on('click', function(e){
     e.preventDefault();
     $('.reactModel-overlay').css('height', '0');
 })
+
+// keyNote
+let keyNoteBtn = $('.keyNote-thumbnail-btn');
+let keyNoteContent = $('.keyNote-content');
+
+keyNoteBtn.on('click', function(e){
+    let target = $(this).attr("href");
+    e.preventDefault();
+    keyNoteBtn.removeClass('active');
+    $(this).addClass('active');
+    keyNoteContent.removeClass('active');
+    $('#' + target).addClass('active');
+    
+});
