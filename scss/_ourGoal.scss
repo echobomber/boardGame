@@ -404,6 +404,14 @@ body{
         opacity: 1;
     }
 }
+.keyNote-content-img{
+    img{
+        object-fit: cover;
+        @include rwd($pc){
+            min-height: 400px;
+        }
+    }
+}
 .keyNote-checkPoint{
     display: flex;
     flex-wrap: wrap;
@@ -421,14 +429,6 @@ body{
             border: 0px;
             background: #fbd23b;
             border: 3px solid #000000;
-        }
-    }
-}
-.keyNote-checkPoint-img{
-    img{
-        object-fit: cover;
-        @include rwd($pc){
-            min-height: 400px;
         }
     }
 }
