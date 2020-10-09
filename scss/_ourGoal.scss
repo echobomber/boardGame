@@ -387,6 +387,17 @@ body{
         transform: scale(1.75);
     }
 }
+.keyNote-thumbnail-animate{
+    animation-name: lightIn;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+
+}
+@keyframes lightIn{
+    0%  {background: #fbd23b;}
+    50% {background: #231f20;}
+    100% {background: #fbd23b;}
+}
 .keyNote-text-title{
     font-size: 1.5rem;
     @include rwd($mobile-sm){

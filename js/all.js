@@ -45,7 +45,9 @@ keyNoteBtn.on('click', function(e){
     let target = $(this).attr("href");
     e.preventDefault();
     keyNoteBtn.removeClass('active');
+    keyNoteBtn.removeClass('keyNote-thumbnail-animate');
     $(this).addClass('active');
+    $(this).next().addClass('keyNote-thumbnail-animate');
     keyNoteContent.removeClass('active');
     $('#' + target).addClass('active');
 });
