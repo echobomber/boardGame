@@ -23,19 +23,30 @@
 </head>
 <body>
     <header class="ourGoal-header">
+        <nav class="article-top-menu top-menu-hide">
+            <div class="container">
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="#" class="menuTop-logo">博德村事件簿</a>
+                    </li>
+                    <li><a href="@" class="menu-open">&#9776;</a></li>
+                </ul>
+            </div>
+        </nav>
         <ul class="ourGoal-menu-top mb-0 list-unstyled container-fluid">
             <li><a class="logo" href="#">中山大報社</a></li>
             <li><a href="#" class="menu-open">&#9776;</a></li>
         </ul>
-        <div class="menu-overlay ourGoal-menu-content">
-            <a href="#" class="menu-close text-decoration-none d-block">&times;</a>
-            <ul class="list-unstyled text-secondary">
-                <li><a href="#" class="text-secondary">現況如何</a></li>
-                <li><a href="#" class="text-secondary">為何難以阻止</a></li>
-                <li><a href="#" class="text-secondary">有哪些案例</a></li>
-                <li><a href="#" class="text-secondary">應該怎麼做</a></li>
-            </ul>
-            <a href="#">測試</a>
+        <div class="menu-overlay">
+            <a href="#" class="menu-close text-decoration-none d-block text-center">&times;</a>
+            <div class="ourGoal-menu-content">
+                <ul class="list-unstyled text-secondary">
+                    <li><a href="#situation" class="text-secondary text-decoration-none">現況如何</a></li>
+                    <li><a href="#whyHard" class="text-secondary text-decoration-none">為何難以阻止</a></li>
+                    <li><a href="#example" class="text-secondary  text-decoration-none">有哪些案例</a></li>
+                    <li><a href="#keyPoint" class="text-secondary text-decoration-none">應該怎麼做</a></li>
+                </ul>
+            </div>
         </div>
         <div class="ourGoal-header-content">
             <h2 class="text-white text-center bold-title">帶你秒懂媒體識讀</h2>
@@ -43,7 +54,7 @@
         </div>
     </header>
     <main>
-        <section>
+        <section id="situation">
             <div class="section-title" data-aos="fade-up">
                 <p class="section-num bold-title h3">Q1</p>
                 <h2 class="bold-title">台灣的現況如何?</h2>
@@ -88,7 +99,7 @@
                 </p>
             </div>
         </section>
-        <section>
+        <section id="whyHard">
             <div class="container">
                 <div class="section-title" data-aos="fade-up">
                     <p class="section-num bold-title h3">Q2</p>
@@ -225,7 +236,7 @@
             </div>
         </section>
         <!-- 案例 -->
-        <section>
+        <section id="example">
             <div class="container px-1">
                 <div class="section-title" data-aos="fade-up">
                     <p class="section-num bold-title h3">Q3</p>
@@ -363,7 +374,7 @@
             </div>
         </section>
         <!-- 四大重點 -->
-        <section>
+        <section id="keyPoint">
             <div class="section-title" data-aos="fade-up">
                 <p class="section-num bold-title h3">Q4</p>
                 <h2 class="bold-title">我們該注意什麼?</h2>
