@@ -76,6 +76,7 @@ $(function(){
     function clickHandler(e) {
     e.preventDefault();
     $('.menu-overlay').css('height', '0');
+    $('.top-menu-hide').css('top', '-100%');
     let href = this.getAttribute("href");
     let offsetTop = document.querySelector(href).offsetTop;
     scroll({
