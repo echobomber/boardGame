@@ -14,7 +14,6 @@ $(function(){
             }else{
                 $('.top-menu-hide').css('top', '-100%');
             } 
-            
         }else{
             $('.top-menu-hide').css('top', '-100%');
         }

@@ -1,0 +1,142 @@
+.gameIntro-body{
+    background-color: #f0ede3;
+    *::selection {
+        background: #879b78; //背景修改為綠色
+        color: #ffffff;
+    }
+}
+.gameIntro-video{
+    margin-top: 100px;
+    @include rwd($mobile){
+        margin-top: 120px;
+    }
+    border-radius: 15px;
+}
+.gameIntro-menu{
+    background: #879b78;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+    }
+}
+.wrap{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.gameIntro-section{
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    @include rwd($mobile){
+        margin-top: 100px;
+        margin-bottom: 150px;
+    }
+}
+//titleImg
+.gameIntro-titleImg{
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    object-fit: cover;
+}
+//font
+.gameIntro-txt{
+    font-weight: bold;
+    color: #423f3f;
+    margin-top: 30px;
+    @include rwd($mobile-sm){
+        font-size: 1.5rem;
+        line-height: 2;
+        margin-top: 50px;
+    }
+}
+.upright{
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    @include rwd(1000px){
+        display: block;
+    }
+}
+.gameIntro-howTitle{
+    @include rwd($mobile){
+        font-size: 2.2rem;
+    }
+}
+.gameIntro-howTxt{
+    font-weight: bold;
+    @include rwd($mobile-sm){
+        font-size: 1.5rem;
+        line-height: 2;
+    }
+    &.intro{
+        @include rwd($pc){
+            font-size: 1.75rem;
+        }
+    }
+}
+//
+.gameIntro-forwho{
+    margin-top: 50px;
+    @include rwd($mobile){
+        margin-top: 100px;
+    }
+    img{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        @include rwd($mobile){
+            width: 60%;
+            margin-bottom: 70px;
+        }
+    }
+}
+//
+.gameContent-txt{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+//footer
+.gameIntro-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // background-color: #879b78;
+    @include rwd($mobile){
+        margin-top: 400px;
+    }
+    @include rwd(990px){
+        margin-top: 200px;
+    }
+    h3{
+        font-size: 2rem;
+        @include rwd($mobile){
+            font-size: 2.5rem;
+        }
+    }
+    .logo{
+        background: url(../img/logo-white.svg);
+        width: 150px;
+        height: 150px;
+        background-size: 105px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        white-space: nowrap;
+        text-indent: 101%;
+        overflow: hidden;
+    }
+
+}
