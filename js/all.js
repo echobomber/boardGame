@@ -67,7 +67,7 @@ $(function(){
         checkPointImg.attr("src", '../../img/check0' + $(this).data("checkpoint") + '.png');
     })
 
-    let links = document.querySelectorAll(".ourGoal-menu-content a");
+    let links = document.querySelectorAll(".overlay-menu-content > ul a");
     for (let link of links) {
     link.addEventListener("click", clickHandler);
     }
