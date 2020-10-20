@@ -66,22 +66,22 @@ $(function(){
         console.log($(this).data("checkpoint"));
         checkPointImg.attr("src", '../../img/check0' + $(this).data("checkpoint") + '.png');
     })
-
-    let links = document.querySelectorAll(".overlay-menu-content > ul a");
+//
+    let links = document.querySelectorAll(".scrollspy a");
     for (let link of links) {
-    link.addEventListener("click", clickHandler);
+        link.addEventListener("click", clickHandler);
     }
     
     function clickHandler(e) {
-    e.preventDefault();
-    $('.menu-overlay').css('height', '0');
-    $('.top-menu-hide').css('top', '-100%');
-    let href = this.getAttribute("href");
-    let offsetTop = document.querySelector(href).offsetTop;
-    scroll({
-        top: offsetTop - 80,
-        behavior: "smooth"
-    });
+        e.preventDefault();
+        $('.menu-overlay').css('height', '0');
+        $('.top-menu-hide').css('top', '-100%');
+        let href = this.getAttribute("href");
+        let offsetTop = document.querySelector(href).offsetTop;
+        scroll({
+            top: offsetTop - 80,
+            behavior: "smooth"
+        });
     }
 });
 
