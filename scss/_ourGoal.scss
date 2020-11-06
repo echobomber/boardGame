@@ -261,7 +261,7 @@ body{
 }
 .reactModel-content{
     position: relative;
-    @include rwd($mobile){
+    @include rwd(992px){
         position: absolute;
         left: 50%;
         top: 50%;
@@ -278,7 +278,7 @@ body{
         text-align: center;
         color: #fff;
         -webkit-text-stroke: 0.8px #231f20;
-        @include rwd($ipad){
+        @include rwd(992px){
             font-size: 3rem;
             text-align: start;
         }
